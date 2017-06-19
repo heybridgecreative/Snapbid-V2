@@ -1,0 +1,344 @@
+body.search {
+    background-image:url(http://blogs-images.forbes.com/jimdobson/files/2015/04/Penthouse-Bedroom-Render-With-Vivienne-Westwood-Additions-1940x1212.jpg);
+    background-attachment:fixed;
+    background-position:center;
+    background-size:cover;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif; 
+}
+
+body.search:after {
+    background: -moz-linear-gradient(-45deg,  rgba(181,189,200,0.8) 0%, rgba(130,140,149,0.8å) 36%, rgba(40,52,59,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,0.8) 0%,rgba(130,140,149,0.8) 36%,rgba(40,52,59,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(181,189,200,0.8) 0%,rgba(130,140,149,0.8) 36%,rgba(40,52,59,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bab5bdc8', endColorstr='#b528343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    position:absolute;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    content:'';
+    display:block;
+    z-index:-1;
+}
+
+.hero-unit {
+    display:table;
+    height:100%;
+    width:100%;
+}
+
+.hero-unit .caption {
+    display:table-cell;
+    height:100%;
+    width:100%;
+    vertical-align:middle;
+}
+
+.search .container {
+    z-index:2;   
+    text-align:center;
+}
+
+.container form .row:last-child {
+	max-width:500px;
+	margin:auto;
+}
+
+.container form {
+    margin:auto;
+}
+
+form#search input[type="text"] {
+    width:100%;
+    padding:20px;
+    border:5px solid white;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    margin-bottom:20px;
+    outline:none;
+}
+
+form#search input[type="datetime"] {
+    width:100%;
+    padding:20px;
+    border:5px solid white;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    margin-bottom:20px;
+    outline:none;
+}
+
+form#search input[type="number"] {
+    width:100%;
+    padding:20px;
+    border:5px solid white;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    margin-bottom:20px;
+    outline:none;
+}
+
+form#search input[type="submit"] {
+    width:100%;
+    padding:0px;
+    border:0px;
+    background:rgba(255,255,255,0);
+    color:white;
+    margin-bottom:20px;
+    outline:none;
+}
+
+form#search .col-xs-12 div.btn {
+    margin-top:16px;   
+}
+
+form#search input::-webkit-input-placeholder { /* Chrome */
+  color: rgba(255,255,255,0.4);
+}
+form#search input:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,0.4);
+}
+form#search input::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,0.4);
+}
+form#search input:-moz-placeholder { /* Firefox 4 - 18 */
+  color: rgba(255,255,255,0.4);
+}
+
+form#search p {
+    text-align:left;
+    color:white;
+}
+
+.btn {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  background-color: #9F1F63;
+  border-radius: 0px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 90px;
+  background-color: #EF4036;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: -100px;
+  left: 20%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 100px;
+  background-color: #EF4036;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: 120px;
+  left: -20%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #EF4036;
+  -webkit-transition: 0s linear;
+  transition: 0s linear;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.btn:hover:before {
+  top: -56px;
+  left: -20%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn:hover:after {
+  top: 10px;
+  left: -23%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn:hover > .btn-content {
+  color: white;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.btn .btn-content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 59px;
+  color: #fff;
+  font-weight: 400;
+  position: relative;
+  z-index: 999;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+/* ADD */
+
+.addProperty {
+    padding: 20px;
+    background-color: #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.propertyadd li {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* HOTELS */
+
+.hotel {
+    margin-bottom: 35px;
+    padding: 0px;
+    border: 1px solid #ddd;
+    border-radius: 4px;   
+}
+
+.hotel > .col-xs-4 {
+    padding-left:0px;
+    -webkit-box-shadow: 9px 0 20px 0 rgba(0,0,0,0.1);
+    box-shadow: 9px 0 20px 0 rgba(0,0,0,0.1);
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+    background-image: url(img/spinner.gif);
+    background-size: 100%;
+    padding-right:0px;
+}
+
+.hotel .title {
+    font-weight: 500;
+    color: #333;
+    font-size: 18px;
+    min-height: 70px;
+    line-height: 34px;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    margin-bottom: 10px;
+    margin: 0px;
+    padding-right: 5px;
+}
+
+.hotel .image {
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:220px;
+}
+
+.hotel .hotel-info {
+    padding-top: 15px;
+    padding-bottom: 14px;   
+}
+
+.hotel [class*=Btn] {
+    width:33.33%;  
+    outline:none;
+    font-size:18px;
+    position:relative;
+    overflow:hidden;
+    font-weight:100;
+}
+
+.hotel .row.buttons {
+    margin:0px !important;  
+}
+
+.hotel i {
+    color: #ef4036;
+    font-size: 20px !important;
+    margin-right:5px;
+}
+
+.hotel [class*=Btn]:after {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:100%;
+    background-color:rgba(0,0,0,0);
+    content:'';
+    display:block;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.hotel [class*=Btn]:focus:after {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:rgba(0,0,0,0.3);
+    content:'';
+    display:block;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.orangeBtn {
+    background-color: #ef4036;
+    color: white;
+    padding: 7px 0px;
+    float:left;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.purpleBtn {
+    background-color: #9f1f63;
+    padding: 7px 0px;
+    float:left;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.greyBtn {
+    background-color: #ccc;
+    padding: 7px 0px;
+    float:left;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 0px;
+}
